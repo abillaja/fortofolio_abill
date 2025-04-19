@@ -6,18 +6,22 @@
     <title>Portofolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <!-- Navigasi Tetap -->
     <nav id="navbar">
         <div class="container">
             <a href="#home" class="logo">Portofolio</a>
-            <ul>
-                <li><a href="#home">Beranda</a></li>
-                <li><a href="#biodata">Biodata</a></li>
-                <li><a href="#about">Tentang</a></li>
-                <li><a href="#hobbi">Hobi Saya</a></li>
-                <li><a href="#contact">Kontak</a></li>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="nav-menu">
+                <li><a href="#home"><i class="fas fa-home"></i><span class="navbar">Beranda</span></a></li>
+                <li><a href="#biodata"><i class="fas fa-id-card"></i><span class="navbar">Biodata</span></a></li>
+                <li><a href="#about"><i class="fas fa-user"></i><span class="navbar">Tentang</span></a></li>
+                <li><a href="#hobbi"><i class="fas fa-gamepad"></i><span class="navbar">Hobi Saya</span></a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i><span class="navbar">Kontak</span></a></li>
             </ul>
         </div>
     </nav>
@@ -25,51 +29,67 @@
     <!-- Bagian Hero -->
     <section id="home" class="hero">
         <div class="container">
-            <h1>Halo, Saya <span>Abil</span></h1>
-            <p>Saya adalah seorang Mahasiswa Institut Teknologi Padang</p>
-            <a href="#biodata" class="btn btn-outline-primary">Priview biodata</a>
+            <div class="hero-content animate__animated animate__fadeIn">
+                <h1>Halo, Saya <span>Abil</span></h1>
+                <p>Saya adalah seorang Mahasiswa Institut Teknologi Padang</p>
+                <a href="#biodata" class="btn btn-primary">Priview biodata</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#biodata"><i class="fas fa-chevron-down"></i></a>
         </div>
     </section>
+
     <!-- Biodata diri-->
     <section id="biodata" class="biodata">
-        <div class="biodata-container">
-            <h3 style="color:white;">Biodata Diri</h3>
-            <div class="biodata-card">
-                <div class="biodata-item">
-                    <div class="biodata-label">Nama Lengkap </div>
-                    <div class="biodata-value">: Abil</div>
-                </div>
-                <div class="biodata-item">
-                    <div class="biodata-label">Nim </div>
-                    <div class="biodata-value">: 2023610051</div>
-                </div>
-                <div class="biodata-item">
-                    <div class="biodata-label">Pendidikan </div>
-                    <div class="biodata-value">: Institut Teknologi Padang - Teknik Informatika (2023)</div>
-                </div>
-                <div class="biodata-item">
-                    <div class="biodata-label">Alamat </div>
-                    <div class="biodata-value">: Padang, Sumatera Barat</div>
-                </div>
-                <div class="biodata-item">
-                    <div class="biodata-label">Tempat, Tanggal Lahir </div>
-                    <div class="biodata-value">: Padang, 28 Maret 2004</div>
-                </div>
+        <div class="container">
+            <div class="section-header">
+                <h2>Biodata Diri</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="biodata-container">
+                <div class="biodata-card animate__animated animate__fadeInUp">
+                    <div class="biodata-item">
+                        <div class="biodata-label">Nama Lengkap </div>
+                        <div class="biodata-value">: Abil</div>
+                    </div>
+                    <div class="biodata-item">
+                        <div class="biodata-label">Nim </div>
+                        <div class="biodata-value">: 2023610051</div>
+                    </div>
+                    <div class="biodata-item">
+                        <div class="biodata-label">Pendidikan </div>
+                        <div class="biodata-value">: Institut Teknologi Padang - Teknik Informatika (2023)</div>
+                    </div>
+                    <div class="biodata-item">
+                        <div class="biodata-label">Alamat </div>
+                        <div class="biodata-value">: Padang, Sumatera Barat</div>
+                    </div>
+                    <div class="biodata-item">
+                        <div class="biodata-label">Tempat, Tanggal Lahir </div>
+                        <div class="biodata-value">: Padang, 28 Maret 2004</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- Bagian Tentang -->
     <section id="about" class="about">
         <div class="container">
-            <div class="about-img">
-                <img src="foto.jpeg" alt="Foto Profil" class="img-fluid rounded-circle foto-profil mt-4 mb-lg-0" width="150">
-                </div>
-                <div class="about-text">
+            <div class="section-header">
                 <h2>Tentang Saya</h2>
-                <p>Saya adalah seorang mahasiswa Institut Teknologi Padang dengan jurusan Teknik Informatika tahun 2023
-                saat ini saya berada di semester 4.
-                </p>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-img animate__animated animate__fadeInLeft">
+                    <img src="foto.jpeg" alt="Foto Profil" class="foto-profil">
+                </div>
+                <div class="about-text animate__animated animate__fadeInRight">
+                    <p>Saya adalah seorang mahasiswa Institut Teknologi Padang dengan jurusan Teknik Informatika tahun 2023
+                    saat ini saya berada di semester 4.</p>
+                    <div class="skill-tags">
+                    </div>
                 </div>
             </div>
         </div>
@@ -78,51 +98,107 @@
     <!-- Bagian hobbi -->
     <section id="hobbi" class="hobbi">
         <div class="container">
-            <h2>Hobi Saya</h2>
+            <div class="section-header">
+                <h2>Hobi Saya</h2>
+                <div class="underline"></div>
+            </div>
             <div class="projects">
-                <div class="project">
-                    <img src="Mancing.jpeg" alt="memancing">
-                    <h3>Memancing</h3>
-                    <p>Ingin tahu selengkapnya kilik tombol dibawah ini.</p>
-                    <a href="serunya memancing.html" class="btn btn-outline-primary">Lebih lanjut</a>
+                <div class="project animate__animated animate__fadeInUp">
+                    <div class="project-img">
+                        <img src="Mancing.jpeg" alt="memancing">
+                    </div>
+                    <div class="project-info">
+                        <h3>Memancing</h3>
+                        <p>Ingin tahu selengkapnya kilik tombol dibawah ini.</p>
+                        <a href="serunya memancing.html" class="btn btn-secondary">Lebih lanjut</a>
+                    </div>
                 </div>
-                <div class="project">
-                    <img src="futsal.jpeg" alt="futsal">
-                    <h3>Futsal</h3>
-                    <p>Ingin tahu selengkapnya kilik tombol dibawah ini.</p>
-                    <a href="futsalan.html" class="btn btn-outline-primary">Lebih lanjut</a>
+                <div class="project animate__animated animate__fadeInUp" data-delay="200">
+                    <div class="project-img">
+                        <img src="futsal.jpeg" alt="futsal">
+                    </div>
+                    <div class="project-info">
+                        <h3>Futsal</h3>
+                        <p>Ingin tahu selengkapnya kilik tombol dibawah ini.</p>
+                        <a href="futsalan.html" class="btn btn-secondary">Lebih lanjut</a>
+                    </div>
                 </div>
-                <div class="project">
-                    <img src="game.jpg" alt="game">
-                    <h3>Game</h3>
-                    <p>Ingin tahu selengkapnya kilik tombol dibawah ini.</p>
-                    <a href="bermain game.html" class="btn btn-outline-primary">Lebih lanjut</a>
+                <div class="project animate__animated animate__fadeInUp" data-delay="400">
+                    <div class="project-img">
+                        <img src="game.jpg" alt="game">
+                    </div>
+                    <div class="project-info">
+                        <h3>Game</h3>
+                        <p>Ingin tahu selengkapnya kilik tombol dibawah ini.</p>
+                        <a href="bermain game.html" class="btn btn-secondary">Lebih lanjut</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- Bagian Kontak -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Hubungi Saya</h2>
-            <div class="social-links">
-                <a href="#" class="text-dark mx-2"><i class="fab fa-tiktok"></i></a>
-                <a href="https://github.com/abillaja"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/ciwawawaw"><i class="fab fa-instagram"></i></a>
-                <a href="https://wa.me/+6283111501927?text=Hello !"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.facebook.com/jamal.okeei"><i class="fab fa-facebook"></i></a>
+            <div class="section-header">
+                <h2>Hubungi Saya</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="social-links animate__animated animate__fadeInUp">
+                <a href="https://github.com/abillaja" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/ciwawawaw" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/+6283111501927?text=Hello !" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/jamal.okeei" class="social-link"><i class="fab fa-facebook"></i></a>
             </div>
         </div>
     </section>
-<!-- footer -->
 
+    <!-- footer -->
     <footer>
-         <div class="container">
-          <p>&copy; 2023 Portofolio Minimal. Semua hak dilindungi.</p>
-              </ul>
-              </div>
-            </footer>
-          </div>
+        <div class="container">
+            <p>&copy; 2023 Portofolio Minimal. Semua hak dilindungi.</p>
+            <div class="back-to-top">
+                <a href="#home"><i class="fas fa-arrow-up"></i></a>
+            </div>
+        </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('nav-menu').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open
+                if (document.getElementById('nav-menu').classList.contains('active')) {
+                    document.getElementById('nav-menu').classList.remove('active');
+                    document.getElementById('menu-toggle').classList.remove('active');
+                }
+            });
+        });
+
+        // Activate animations when scrolling
+        window.addEventListener('scroll', function() {
+            const animatedElements = document.querySelectorAll('.animate__animated');
+            animatedElements.forEach(el => {
+                const position = el.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (position < screenPosition) {
+                    el.style.visibility = 'visible';
+                    el.style.opacity = '1';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
